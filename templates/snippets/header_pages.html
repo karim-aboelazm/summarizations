@@ -1,0 +1,28 @@
+{% load static %}
+
+<!-- Navbar Start -->
+<div class="container-fluid nav-bar p-0 mb-5" style="top:0;position:fixed;background-color:#131313;">
+    <div class="container-lg p-0">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+            <a href="/" class="navbar-brand">
+                <h1 class="m-0 text-white display-4"><span class="text-warning"></span><span class="text-warning">S</span>ummary</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    {% with request.resolver_match.url_name as url_name %}
+                    <a href="/" class="nav-item nav-link {% if url_name == 'home'%} text-warning active {% else %} text-white {% endif %}">Home</a>
+                    <a href="{% url 'summy:text'  %}" class="nav-item nav-link {% if url_name == 'text'%} text-warning active {% else %} text-white {% endif %}">Text</a>
+                    <a href="{% url 'summy:pdf'   %}" class="nav-item nav-link {% if url_name == 'pdf'%} text-warning active {% else %} text-white {% endif %}">Pdf</a>
+                    <a href="{% url 'summy:voice' %}" class="nav-item nav-link {% if url_name == 'voice'%} text-warning active {% else %} text-white {% endif %}">Voice</a>
+                    <a href="{% url 'summy:video' %}" class="nav-item nav-link {% if url_name == 'video'%} text-warning active {% else %} text-white {% endif %}">Video</a>
+                    <a href="{% url 'summy:url'   %}" class="nav-item nav-link {% if url_name == 'url'%} text-warning active {% else %} text-white {% endif %}">Url</a>
+                    {% endwith %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+    <!-- Navbar End -->

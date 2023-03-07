@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Text Summary
+{% endblock title %}
+
+{% block content %}
+{% include 'snippets/header.html' %}
+{% include 'snippets/slider.html' %}
+<!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center pb-1">
+                <div class="col-lg-5">
+                    <img class="img-thumbnail p-3" src="{% static '' %}img/result.png" alt="">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <small class="bg-primary text-white text-uppercase font-weight-bold px-1">About Our Project</small>
+                    <h1 class="mt-2 mb-4">Lecture Summarization Using Machine Learning</h1>
+                    <p class="mb-4" style="text-align:justify">Lecture summarization, in an input
+                        video,text,pdf or voice recorder, to capture the important information of the
+                        input video,text,pdf or voice recorder we need to select a subset of the video
+                        frames ,text,pdf or voice recorder or shots to generate a summary of that video,text,pdf or voice recorder.
+                        The tool to assist video search, retrieval, browsing,
+                        etc., video,text,pdf or voice recorder summarization is a useful tool in the fast &
+                        growing world and the large amount of video,text,pdf or voice recorder lectures
+                        available online</p>
+                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Read More</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <small class="bg-primary text-white text-uppercase font-weight-bold px-1">What we do</small>
+                    <h1 class="mt-2 mb-3">We Offer Summarization Services</h1>
+                    <h4 class="font-weight-normal text-muted mb-4" style="text-align: justify;">We use more than three ai algorithms to summarize text , pdf , video and recorded voice </h4>
+        
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex">
+                                <img src="{% static '' %}img/brain-circuit.png" style="width:40px;height:40px;position: relative;bottom:7px;right:10px;" alt="" srcset="">
+                                <div class="d-flex flex-column">
+                                    <h4 class="font-weight-bold mb-3">NLTK ALGO</h4>
+                                    <p style="text-align:justify;">Text summarization is the process of shortening long pieces of text while preserving key information content and overall meaning, to create a subset (a summary) that represents the most important or relevant information within the Text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex">
+                                <img src="{% static '' %}img/brain-circuit.png" style="width:40px;height:40px;position: relative;bottom:7px;right:10px;" alt="" srcset="">
+                                <div class="d-flex flex-column">
+                                    <h4 class="font-weight-bold mb-3">SUMY ALGO</h4>
+                                    <p style="text-align:justify;">Sumy is able to create extractive summary. That means that it tries to find the most significant sentences in the document(s) and compose it into the shortened text. There is another approach called abstractive summary but to create it one needs to understand the topic and create new shortened text from it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex">
+                                <img src="{% static '' %}img/brain-circuit.png" style="width:40px;height:40px;position: relative;bottom:7px;right:10px;" alt="" srcset="">
+                                <div class="d-flex flex-column">
+                                    <h4 class="font-weight-bold mb-3">SEQ2SEQ ALGO</h4>
+                                    <p style="text-align:justify;">Sequence to Sequence (often abbreviated to seq2seq) models is a special class of Recurrent Neural Network architectures that we typically use (but not restricted) to solve complex Language problems like Machine Translation, Question Answering, creating Chatbots, Text Summarization, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex">
+                                <img src="{% static '' %}img/brain-circuit.png" style="width:40px;height:40px;position: relative;bottom:7px;right:10px;" alt="" srcset="">
+                                <div class="d-flex flex-column">
+                                    <h4 class="font-weight-bold mb-3">SPACY ALGO</h4>
+                                    <p style="text-align:justify;">spaCy is a free, open-source advanced natural language processing library, written in the programming languages Python and Cython. spaCy mainly used in the development of production software and also supports deep learning workflow via statistical models of PyTorch and TensorFlow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+{% endblock content %}
+    
